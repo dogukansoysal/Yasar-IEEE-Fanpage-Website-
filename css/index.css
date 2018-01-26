@@ -1,0 +1,118 @@
+body {
+    background-image: url("img/yasar_icon2.png");
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat:no-repeat;
+
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+#carouselJumb{
+	height:150px; 
+	background: rgba(0, 0, 0, 0.4);
+}
+
+#carouselItem{
+	width:550px; 
+	height: 550px;
+}
+
+.jumbotron{
+    border-radius: 20px;
+	color:white;
+	font-size: 20px;
+}
+
+.page-header{
+	font-size: 50px;
+}
+
+#nav_img{
+	width: 30px;
+	height: 30px;
+}
+
+.navbar-nav{
+    margin-left: auto;
+    margin-right: auto;	
+}
+
+.nav-item {
+    border-radius: 5px;
+	font-size: 25px;
+}
+
+.nav-item:hover, .dropdown-item:hover, #jumboBtn:hover{
+	background-color: #99ccff;
+}
+
+#jumboBtn{
+    border-radius: 5px;
+	border: 2px solid #99ccff;
+	background-color: #cce6ff;
+	color: black;
+}
+
+.dropdown:hover .dropdown-menu  {
+    display: block;
+}
+
+.stroke{
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+}
+
+.dropdown-menu{
+	 margin-top: 0px;
+}
+
+#socialMediaPng{
+	width: 4%;
+}
+
+#socialMediaPng:Hover{
+	width: 5%;	
+}
+
+.btn {
+  background-color: transparent;
+}
+
+#t1{
+	    float: left;
+}
+
+#t2{
+    
+    color: white;
+    text-align: center;
+    padding: 42px;
+}
+
+#t0 {
+    list-style-type: none;
+	overflow: hidden;
+}
+
+.page-footer {
+	left: 0;
+	width: 100%;
+	background-color: gray;
+	color: white;
+	text-align: center;
+}
+
+p.page-footer{
+	background-color: rgb(80, 80, 80);
+	position: relative;
+}

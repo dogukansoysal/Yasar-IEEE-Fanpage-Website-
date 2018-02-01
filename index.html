@@ -9,27 +9,27 @@
 
 <style>
 <!--.css dosyasinda-->
-
 </style>
 
 </head>
-<body>
-
-<div class="container text-center">
-	<div class="page-header">
+<body background="img/yasar_icon2.png">
+<!--
+	<div class="page-header top">
 		<a href="index.html">
-			<img src="img/yasarlogo.png" alt="Logo" width="633px" height="200px">	
+			<img src="img/yasarlogo.png" alt="Logo" width="316px" height="100px">	
 		</a>		
 	</div>
-		
+-->
 		
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
 	<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+		<li class="nav-item">
+				<a class="navbar-brand" href="#"><img src="img/yasarlogo.png" alt="Logo" width="180px" height="60px"></a>
+		</li>
 		<li class="nav-item active">
 			<a class="nav-link" href="#">Anasayfa</a>
 		</li>
@@ -63,18 +63,14 @@
   </div>
 </nav>
 
-<br/>
-<br/>
-<br/>
+<div class="container text-center">
 		<!--
 			<a href="#"><img src="img/facebook.png" id="socialMediaPng"></a>
 			<a href="#"><img src="img/instagram.png" id="socialMediaPng"></a>
 			<a href="#"><img src="img/twitter.png" id="socialMediaPng"></a>
 		-->
 
-
-
-<div class="container text-center w-50">	
+<div class="container-fluid text-center w-50">	
 	<div id="carousel1" class="carousel slide" data-ride="carousel">
 	  <ol class="carousel-indicators">
 		<li data-target="#carousel1" data-slide-to="0" class="active"></li>
@@ -86,9 +82,9 @@
 		  <img class="d-block w-100" id="carouselItem" src="img/t1.jpg" alt="First slide">
 			<div class="carousel-caption d-none d-md-block stroke">
 				<a href="#">
-					<div class="jumbotron" id="carouselJumb">
-					<h4>Etkinlik AAA (21 Şubat 2018)</h4>
-					<h5>Ayrıntılı bilgi için tıklayın...</h5>
+					<<div class="jumbotron-fluid" id="carouselJumb">	
+						<h4>Etkinlik AAA (21 Şubat 2018)</h4>
+						<h5>Ayrıntılı bilgi için tıklayın...</h5>
 					</div>
 				</a>
 			</div>
@@ -97,7 +93,7 @@
 		  <img class="d-block w-100" id="carouselItem" src="img/t2.jpg" alt="Second slide">
 			<div class="carousel-caption d-none d-md-block stroke">
 				<a href="#">
-					<div class="jumbotron" id="carouselJumb">
+					<div class="jumbotron-fluid" id="carouselJumb">
 						<h4>Etkinlik BBB (10 Temmuz 2018)</h4>
 						<h5>Ayrıntılı bilgi için tıklayın...</h5>
 					</div>
@@ -108,7 +104,7 @@
 		  <img class="d-block w-100" id="carouselItem" src="img/t3.jpg" alt="Third slide">
 			<div class="carousel-caption d-none d-md-block stroke">
 				<a href="#">
-					<div class="jumbotron" id="carouselJumb">
+					<div class="jumbotron-fluid" id="carouselJumb">
 						<h4>Etkinlik CCC (30 Haziran 2018)</h4>
 						<h5>Ayrıntılı bilgi için tıklayın...</h5>
 					</div>
@@ -131,13 +127,10 @@
 
 
 <br/>
-<br/>
-<br/>
-
 
 
 	<div class="container text-center w-75">	
-		<div class="jumbotron" id="jumboBizKimiz">
+		<div class="jumbotron-fluid" id="jumboBizKimiz">
 				<button class="btn" onclick="counter();bizKimiz()" id="jumboBtn" data-toggle="collapse" data-target="#colInfo">Biz Kimiz? </button>
 			<br/>
 			<br/>

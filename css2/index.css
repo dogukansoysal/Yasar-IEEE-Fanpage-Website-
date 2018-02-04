@@ -1,8 +1,9 @@
 body {
+	background:	url(../img/yasar_icon2.png), url(../img/sub_bl.jpg);
 	background-attachment: fixed;
     background-position: center;
-    background-repeat:no-repeat;
-
+    background-repeat:no-repeat, repeat;
+    background-size: auto, 20%;
 }
 
 .top {
@@ -17,29 +18,6 @@ body {
     top: 50%;
     left: 50%;
 }
-
-#carouselJumb{
-	height:65px; 
-	background: rgba(0, 0, 0, 0.5);
-}
-
-#carouselItem{
-	width:550px; 
-	height: 550px;
-}
-
-.jumbotron{
-    border-radius: 20px;
-	color:white;
-	font-size: 20px;
-}
-
-.jumbotron-fluid{
-    border-radius: 20px;
-	color:white;
-	font-size: 20px;
-}
-
 
 .page-header{
 	font-size: 50px;
@@ -60,25 +38,12 @@ body {
     margin-right: auto;	
 }
 
-.navbar-brand{
-    margin-left: auto;
-    margin-right: auto;	
-}
-
 .nav-item {
-    border-radius: 5px;
 	font-size: 25px;
 }
 
 .nav-item:hover, .dropdown-item:hover, #jumboBtn:hover{
-	background-color: #99ccff;
-}
-
-#jumboBtn{
-    border-radius: 5px;
-	border: 2px solid #99ccff;
-	background-color: #cce6ff;
-	color: black;
+	background: rgba(0, 0, 0, 0.4);
 }
 
 .dropdown:hover .dropdown-menu  {
@@ -98,32 +63,8 @@ body {
 	 margin-top: 0px;
 }
 
-#socialMediaPng{
-	width: 4%;
-}
-
-#socialMediaPng:Hover{
-	width: 5%;	
-}
-
 .btn {
   background-color: transparent;
-}
-
-#t1{
-	    float: left;
-}
-
-#t2{
-    
-    color: white;
-    text-align: center;
-    padding: 42px;
-}
-
-#t0 {
-    list-style-type: none;
-	overflow: hidden;
 }
 
 .page-footer {
@@ -137,4 +78,34 @@ body {
 p.page-footer{
 	background-color: rgb(80, 80, 80);
 	position: relative;
+}
+
+.page1{
+	
+	height:400px;
+	width: 1200px;
+	display: flex;
+}
+
+.bg1{
+	box-shadow: 0 25px 30px 6px rgba(0,0,0,0.4);
+	background: rgba(0,0,0,0.5);
+	border-radius: 10px;
+	height: 100%;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.bg2{
+	box-shadow: 0 25px 30px 6px rgba(0,0,0,0.4);
+	transform: translate(-100px,150px);
+	border-radius: 10px;
+	background: rgba(0,0,0,0.5);
+	height: 100%;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.bg2 p, .bg1 p{
+	color: #fff;
 }

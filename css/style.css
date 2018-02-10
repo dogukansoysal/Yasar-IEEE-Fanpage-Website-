@@ -6,15 +6,25 @@ body {
     background-repeat:no-repeat, repeat ;
     background-size: auto, 20%;
 	font-family: 'Roboto', sans-serif;
+	border-top: 5px solid black;
 }
 
 /* Navbar */
-#socialUl{
-	margin: 0 10%;
+
+#mainHeader{
+	margin: -17px auto;
 }
 
-#mainNav{
-	border-top: 5px solid black;
+#mainNavItems{
+
+}
+.navbar-nav:not(#socialUl) > .nav-item > a:hover, .navbar-nav:not(#socialUl) > .nav-item.active > a{
+	margin: -5px auto;
+	border-top: 5px solid #0086b3;
+}
+
+.navbar-nav:not(#socialUl) > .nav-item{
+	margin: -35px auto;
 }
 
 .navbar-nav:not(#socialUl) > .nav-item > a{
@@ -25,7 +35,7 @@ body {
     width: 100%;
 	height: 100%;
 }
-
+/*
 .nav-item > a::after{
 	content: "";
     display: block;
@@ -35,6 +45,7 @@ body {
     width: 100%;
 	height: 100%;
 }
+*/
 
 .navbar-nav:not(#socialUl) > .nav-item > a:hover, .navbar-nav:not(#socialUl) > .nav-item.active > a, .dropdown-item:hover, #jumboBtn:hover{
 	color: #0086b3;
@@ -55,31 +66,17 @@ body {
 }
 
 .dropdown-menu{
-	 margin-top: 0px;
+	margin-top: 0px;
 }
 
 #nav_img{
 	width: 40px;
 	height: 40px;
 }
+
 #nav_img:hover{
 	width: 50px;
 	height: 50px;
-}
-
-#upBg{
-	padding: 0 0 0 20%;
-	height: 5px;
-	background-color: #000;
-}
-
-#botBg{
-	padding: 0 0 0 20%;
-	height: 5px;
-}
-
-#mainNav{
-	padding: 0 0 0 20%;
 }
 /* Navbar End */
 
@@ -115,13 +112,12 @@ p.page-footer{
 
 .page1{
 	padding-top: 8%;
-	height:400px;
-	width: 1200px;
 	display: flex;
 }
 
 .bg1{
 	box-shadow: 0 25px 30px 6px rgba(0,0,0,0.4);
+	transform: translate(50px);
 	background: rgba(0,0,0,0.5);
 	border-radius: 10px;
 	height: 100%;
@@ -131,7 +127,7 @@ p.page-footer{
 
 .bg2{
 	box-shadow: 0 25px 30px 6px rgba(0,0,0,0.4);
-	transform: translate(-100px,150px);
+	transform: translate(-50px,100px);
 	border-radius: 10px;
 	background: rgba(0,0,0,0.5);
 	height: 100%;

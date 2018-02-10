@@ -1,53 +1,90 @@
 body {
-	background:	url(../img/yasar_icon2.png), url(../img/sub_bl.jpg);
-	background-attachment: fixed;
+	/* Daha fazla pattern; http://www.patternpictures.com/topics/texture/ */
+	background:	url(../img/yasar_icon2.png), url(../img/pat3.png);
+	background-attachment: fixed,fixed;
     background-position: center;
-    background-repeat:no-repeat, repeat;
-    background-size: auto, 15%;
+    background-repeat:no-repeat, repeat ;
+    background-size: auto, 20%;
+	font-family: 'Roboto', sans-serif;
 }
 
-.top {
-    margin: 0;
-    top: 50%;
-    left: 50%;
+/* Navbar */
+#socialUl{
+	margin: 0 10%;
 }
 
-.center {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
+#mainNav{
+	border-top: 5px solid black;
 }
 
-.page-header{
-	font-size: 50px;
+.navbar-nav:not(#socialUl) > .nav-item > a{
+	text-transform: uppercase;
+	font-size: 24px;
+	color: #000;
+	display: block;
+    width: 100%;
+	height: 100%;
 }
 
-#nav_img{
-	width: 30px;
-	height: 30px;
+.nav-item > a::after{
+	content: "";
+    display: block;
+    background: url("../img/ayracOFF.png");  
+	background-position: center;
+	background-repeat:no-repeat;
+    width: 100%;
+	height: 100%;
 }
 
-.navbar-nav{
-    margin-left: auto;
-    margin-right: auto;	
+.navbar-nav:not(#socialUl) > .nav-item > a:hover, .navbar-nav:not(#socialUl) > .nav-item.active > a, .dropdown-item:hover, #jumboBtn:hover{
+	color: #0086b3;
 }
 
-#mid{
-    margin-left: auto;
-    margin-right: auto;	
-}
-
-.nav-item {
-	font-size: 25px;
-}
-
-.nav-item:hover, .dropdown-item:hover, #jumboBtn:hover{
-	background: rgba(0, 0, 0, 0.4);
+.nav-item > a:hover::after, .nav-item.active > a::after{
+	content: "";
+    display: block;
+    background: url("../img/ayracON.png");  
+	background-position: center;
+	background-repeat:no-repeat;
+    width: 100%;
+	height: 100%;
 }
 
 .dropdown:hover .dropdown-menu  {
     display: block;
+}
+
+.dropdown-menu{
+	 margin-top: 0px;
+}
+
+#nav_img{
+	width: 40px;
+	height: 40px;
+}
+#nav_img:hover{
+	width: 50px;
+	height: 50px;
+}
+
+#upBg{
+	padding: 0 0 0 20%;
+	height: 5px;
+	background-color: #000;
+}
+
+#botBg{
+	padding: 0 0 0 20%;
+	height: 5px;
+}
+
+#mainNav{
+	padding: 0 0 0 20%;
+}
+/* Navbar End */
+
+.page-header{
+	font-size: 50px;
 }
 
 .stroke{
@@ -57,10 +94,6 @@ body {
     1px -1px 0 #000,
     -1px 1px 0 #000,
     1px 1px 0 #000;  
-}
-
-.dropdown-menu{
-	 margin-top: 0px;
 }
 
 .btn {
@@ -81,7 +114,7 @@ p.page-footer{
 }
 
 .page1{
-	
+	padding-top: 8%;
 	height:400px;
 	width: 1200px;
 	display: flex;
@@ -105,7 +138,11 @@ p.page-footer{
 	width: 100%;
 	box-sizing: border-box;
 }
-
-.bg2 p, .bg1 p{
+.bg1 p{
+	margin: 50px 100px 0 20px;
+	color: #fff;
+}
+.bg2 p{
+	margin: 50px 20px 0 100px;
 	color: #fff;
 }
